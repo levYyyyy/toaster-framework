@@ -1,7 +1,7 @@
 <?php
 
 class Router {
-    static function get($url, $params = []) {
+    static function set($url, $params = []) {
         $obj = new $params[0];
         if(Router::checkForValidUrl($url)) {
             call_user_func(array($obj, $params[1]));
