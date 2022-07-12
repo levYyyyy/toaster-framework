@@ -1,23 +1,22 @@
 <?php
 
-namespace Core\Wrapper;
+require_once('Core/Utils/Database.php');
 
-use Core\Utils\Database;
-
-class Model {   
-    public function createModel(array $kwargs = []) {
-        Database::create($this->$kwargs);
+class Model { 
+    static function createModel($tableName, array $kwargs = []) {
+        Database::create($tableName, $kwargs);
     }
 
-    public function findModel(array $kwargs = []) {
-        Database::read($this->$kwargs);
-    }
-    
-    public function updateModel(array $kwargs = []) {
-        Database::update($this->$kwargs);
+    static function insertInto($tableName, array $kwargs = []) {
+        Database::insert($tableName, $kwargs);
     }
 
-    public function deleteModel(array $kwargs = []) {
-        Database::delete($this->$kwargs);
+    static function deleteFrom($tableName, $rowNumber) {
+        Database::delete($tableName, $kwargs);
     }
+
+    static function readFrom($tableName, $rowNumber) {
+        Database::read($tableName, $rowNumber);
+    }
+
 }
