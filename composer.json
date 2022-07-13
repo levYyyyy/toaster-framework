@@ -1,12 +1,14 @@
 {
-    "name": "toaster/toaster",
-    "description": "framework",
-    "require": {
-    },
-    "autoload": {
-      "psr-4": {
-        "toaster\\client\\": "client/",
-        "toaster\\service\\": "service/"
-      }
+    "name": "toaster/toast",
+    "description": "Just Toaster Framework",
+    "homepage": "https://github.com/monsterlane/lumen-console-tests",
+    "type": "project",
+    "authors": [
+    {
+       "name": "Jonathan Down",
+       "homepage": "https://github.com/levYyyyy/toaster-framework"
     }
-  }
+    ]
+    
+}
+ 
