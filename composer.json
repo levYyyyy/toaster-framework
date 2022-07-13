@@ -1,0 +1,12 @@
+{
+    "name": "toaster/toaster",
+    "description": "framework",
+    "require": {
+    },
+    "autoload": {
+      "psr-4": {
+        "toaster\\client\\": "client/",
+        "toaster\\service\\": "service/"
+      }
+    }
+  }

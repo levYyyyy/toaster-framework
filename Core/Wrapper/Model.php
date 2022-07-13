@@ -3,20 +3,13 @@
 require_once('Core/Utils/Database.php');
 
 class Model { 
-    static function createModel($tableName, array $kwargs = []) {
-        Database::create($tableName, $kwargs);
+    public function createModel() {
+        $ctx = $this;
+        Database::create($ctx);
     }
 
-    static function insertInto($tableName, array $kwargs = []) {
-        Database::insert($tableName, $kwargs);
+    public function insertInto(array $kwargs = []) {
+        $ctx = $this;
+        Database::insert($ctx, $kwargs);
     }
-
-    static function deleteFrom($tableName, $rowNumber) {
-        Database::delete($tableName, $kwargs);
-    }
-
-    static function readFrom($tableName, $rowNumber) {
-        Database::read($tableName, $rowNumber);
-    }
-
 }

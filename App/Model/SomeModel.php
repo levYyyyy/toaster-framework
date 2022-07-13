@@ -3,5 +3,16 @@
 include('Core/Wrapper/Model.php');
 
 class SomeModel extends Model{
-    // Model should use absctraction
+
+    public $modelName = "toast";
+
+    public $fields = [
+        "toaster",
+        "framework"
+    ];
+
+    static function index() {
+        $obj = new SomeModel();
+        $obj->createModel();
+    }
 }
