@@ -1,11 +1,11 @@
 {
    "name": "toaster/toast",
-    "description": "Just Toaster Framework",
-    "homepage": "https://github.com/monsterlane/lumen-console-tests",
-    "authors": [
-        {
-            "name": "Jonathan Down",
-            "homepage": "https://github.com/levYyyyy/toaster-framework"
-        }
-    ],
+   "description": "Just Toaster Framework",
+   "homepage": "https://github.com/monsterlane/lumen-console-tests",
+   "authors": [
+   {
+      "name": "Jonathan Down",
+      "homepage": "https://github.com/levYyyyy/toaster-framework"
+   }
+   ]
   }
